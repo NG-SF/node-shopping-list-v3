@@ -74,7 +74,7 @@ app.get('/recipes', (req, res) => {
 
 app.delete('/recipes/:itemId', (req, res) => {
   Recipes.delete(req.params.itemId);
-  console.log(`Deleted shopping list item \`${req.params.itemId}\``);
+  console.log(`Deleted recipe \`${req.params.itemId}\``);
   res.status(204).end();
 });
 
